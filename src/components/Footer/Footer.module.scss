@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.container {
+    background: var(--Gray);
+    color: var(--White);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+
+    .left {
+        form {
+            input {
+                color: var(--Black);
+                background-color: var(--LightGrey);
+                padding: 0.2rem;
+                border: none;
+                outline: 0;
+                width: 381px;
+                height: 28px;
+
+                &::placeholder {
+                    color: var(--Black)
+                }
+            }
+
+            button {
+                color: var(--White);
+                background-color: var(--Button);
+                // outline: solid 1px var(--White);
+                border: solid 1px var(--White);
+                margin-top: 1rem;
+                padding: 0.5rem;
+                width: 137px;
+            }
+        }
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        ul {
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+
+        .padded p:not(:first-child) {
+            padding-left: 0.5rem;
+        }
+
+        .socialList {
+            list-style-type: none;
+            padding-left: 0.5rem; 
+            display: flex;
+            gap: 1rem;
+
+            .icon {
+                width: 42px;
+                height: 42px;
+                background-color: var(--LightGrey);
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+    }
+}
+

@@ -1,13 +1,13 @@
-import Header from './components/Header/Header.jsx'
-import Main from './components/Main/Main.jsx'
-import Footer from './components/Footer/Footer.jsx'
+// import { Header } from './components/Header/Header'
+import { Main } from './components/Main/Main'
+import { Footer } from './components/Footer/Footer'
 import './App.scss'
 
 function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Main />
       <Footer />
     </>
