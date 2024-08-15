@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.navbarStyle {
+    width: 100%;
+    background-color: #262626;
+    align-items: center;
+    margin: 0;
+}
+
+.navbarUl {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    color: #FFFFFF;
+    height: 100%;
+    justify-content: end;
+    margin: 0;
+    li {
+        padding: 0.5rem 1rem;
+        font-family: 'Philosopher', serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+}
+
