@@ -1,8 +1,9 @@
 import { Gallery } from './Gallery/Gallery'
+import { Card } from './Cards/Cards'
 import main from './Main.module.scss'
+import cards from './Cards/Cards.module.scss'
 
 export const Main = () => {
-
     return (
         <main className={main.container}>
             <section>
@@ -11,22 +12,23 @@ export const Main = () => {
             <button>LÆS MERE</button>
             </section>
             <section className={main.midSection}>
-                <div className={main.left}>
-                    <h3>One 2 One</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque.</p>
-                    <button>BOOK TID</button>
-                </div>
-                <div className={main.right}>
-                    <h3>Loyalty Free</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque.</p>
-                    <button>LÆS MERE</button>
-                </div>
+                <Card
+                    title="One 2 One"
+                    content="Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque."
+                    buttonText="BOOK TID"
+                    className={cards.left}
+                />
+                <Card
+                    title="Loyalty Free"
+                    content="Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque."
+                    buttonText="LÆS MERE"
+                    className={cards.right}
+                />
             </section>
-            <section>
-                <h3>FOLLOW US ON INSTAGRAM</h3>
+            <h3>FOLLOW US ON INSTAGRAM</h3>
+            <section className={main.gallery}>
+                <Gallery />
             </section>
-
-            <Gallery />
         </main>
     )
 }

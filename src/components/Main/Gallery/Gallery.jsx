@@ -11,14 +11,14 @@ export const Gallery = () => {
         './src/assets/gallery9.png',
         './src/assets/gallery10.png',
         './src/assets/gallery11.png',
-        './src/assets/gallery12.png',
+        './src/assets/gallery12.png'
     ]
 
     return (
         <>
             {GalleryArray.map(imageUrl => {
                 return (
-                    <img src={imageUrl}></img>
+                    <img key={imageUrl} src={imageUrl}></img>
                 )
             })}
         </>

@@ -1,12 +1,17 @@
 @import "../../App.scss";
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    padding: 1rem;
 
-    h2 {
-        font-size: 32px;
+    h2, h3 {
+        font-size: 2rem;
     }
 
+    
     .upperCase {
         text-transform: uppercase;
     }
@@ -21,30 +26,20 @@
     }
 
     .midSection {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-        .left {
-            color: var(--White);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 611px;
-            height: 327px;
-            background-image: url(../../assets/book1.png);
-        }
-        
-        .right {
-            color: var(--White);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 611px;
-            height: 327px;
-            background-image: url(../../assets/book2.png);
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
         }
     }
 }
