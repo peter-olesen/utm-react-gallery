@@ -9,5 +9,13 @@
 }
 
 body {
-  font-family: "Gilda Display", serif;
+  font-family: 'Gilda Display', serif;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  #root {
+    width: 1280px;
+  }
 }

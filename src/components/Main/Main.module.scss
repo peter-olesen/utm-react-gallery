@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+
+    h2, h3 {
+        font-size: 2rem;
+    }
+
+    
+    .upperCase {
+        text-transform: uppercase;
+    }
+
+    button {
+        width: 137px;
+        height: 40px;
+        background: var(--White);
+        border: solid 1px var(--Black);
+        outline: none;
+        font-size: 14px;
+    }
+
+    .midSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
