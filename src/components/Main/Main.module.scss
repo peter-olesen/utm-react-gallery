@@ -9,11 +9,24 @@
 
     h2, h3 {
         font-size: 2rem;
+        
+    }
+    h2{
+        text-transform: uppercase;
     }
 
     
     .upperCase {
         text-transform: uppercase;
+        padding-bottom: 6rem;
+        padding-top: 2rem;
+        max-width: 60rem;
+         text-align: center;
+        margin: auto; 
+    }
+    .section1 {
+        padding: 2rem 0;
+        
     }
 
     button {

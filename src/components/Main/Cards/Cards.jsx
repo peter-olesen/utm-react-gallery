@@ -6,7 +6,7 @@ export const Card = ({ title, content, buttonText, className }) => {
             <div className={className}>
                 <h3>{title}</h3>
                 <p className={card.margin}>{content}</p>
-                <button>{buttonText}</button>
+                <button className={card.cardButton}>{buttonText}</button>
             </div>
         </>
     )
