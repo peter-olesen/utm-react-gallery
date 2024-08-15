@@ -4,6 +4,12 @@
     padding: 1rem;
 }
 
+.cardButton {
+    background-color: #1F1F1F;
+    color: var(--White);
+    border: solid 1px var(--White);
+}
+
 .left {
     color: var(--White);
     display: flex;
