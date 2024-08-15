@@ -1,0 +1,50 @@
+@import "../../App.scss";
+
+
+.headerStyle {
+    background-image: url('../src/assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 666px;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+
+    h1, h3, p {
+        // color: #FFFFFF;
+        color: var(--White);
+        font-family: 'Gilda Display', serif;
+        font-weight: 400;
+        text-shadow: 8px 4px 7px #00000052;
+        text-align: center;
+        margin: auto; 
+    }
+    
+    h1 {
+        font-size: 8rem;
+        
+    }
+    h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 2rem;
+    }
+    p {
+        font-size: 0.9rem;
+        text-align: left;
+        align-self: center;
+        max-width: 29rem;
+        padding-bottom: 2rem;
+    }
+    .headerComponent {
+        background-color: #00000079;
+        width: 100%;
+        height: 253px;
+    }
+    
+}
+
+
+
+
